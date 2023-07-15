@@ -1,0 +1,352 @@
+<form id="okakeibo" action="https://docs.google.com/forms/d/e/1FAIpQLSeLQ4pQ5xdWzNzDAR3whyzE7lijRt64BwTVLqTx5L49NTB7Hw/formResponse" method="POST" target="hidden_iframe" onsubmit="submitForm()">
+  <label>店舗 名称 金額 記号:<br></label><input type="text" id="text01" name="entry.1752744726"><br>
+  <label>決済手段01:<br></label>
+  <select name="entry.799936107" id="pulldown" onchange="showOtherOption(this.value)">
+    <option value="Suica">Suica</option>
+    <option value="6gram">MIXIM</option>
+    <option value="その他">その他</option>
+    <option value="三井住友NL">三井住友NL</option>
+    <option value="TOYOTAWallet">TOYOTAWallet</option>
+    <option value="Revolut">Revolut</option>
+    <option value="6gram">MIXIM</option>
+    <option value="PayPay">PayPay</option>
+    <option value="エポス">エポス</option>
+    <option value="ファミペイ">ファミペイ</option>
+    <option value="アマギフ">アマギフ</option>
+    <option value="現金">現金</option>
+    <option value="JREポイント">JREポイント</option>
+
+    <option value="セゾンパール">セゾンパール</option>
+    <option value="JQセゾン">JQセゾン</option>
+    <option value="親（借金）">借金</option>
+    <option value="三井住友銀行">三井住友銀行</option>   
+    <option value="nanaco">nanaco</option>
+  </select><br>
+  <div id="otherOption" style="display:none">
+    <label>その他決済:<br></label><input type="text" id="pulldown02" name="entry.799936107"><br>
+  </div>
+  <label>メインカテゴリ:</label><br>
+  <input type="radio" name="mainCategory" value="食費" id=radio11 onchange="showSubCategory(this.value)"><label for="radio11">食費</label><br>
+  <input type="radio" name="mainCategory" value="趣味" id=radio12 onchange="showSubCategory(this.value)"><label for="radio12">趣味</label><br>
+  <input type="radio" name="mainCategory" value="大学" id=radio15 onchange="showSubCategory(this.value)"><label for="radio15">大学</label><br>
+  <input type="radio" name="mainCategory" value="交通費" id=radio13 onchange="showSubCategory(this.value)"><label for="radio13">交通費</label><br>
+  <input type="radio" name="mainCategory" value="生活費" id=radio16 onchange="showSubCategory(this.value)"><label for="radio16">生活費</label><br>
+  <input type="radio" name="mainCategory" value="チャージ" id=radio17 ><label for="radio17">チャージ</label><br>
+  <input type="radio" name="mainCategory" value="その他" id=radio14 onchange="showSubCategory(this.value)"><label for="radio14">その他</label><br>
+  <div id="subCategory" style="display: none;">
+    <label>サブカテゴリ:</label><br>
+    <div id="食費" style="display: none;">
+      <input type="radio" name="subCategory" id=radio111 value="雑費"><label for="radio111">雑費</label><br>
+      <input type="radio" name="subCategory" id=radio112 value="飲料"><label for="radio112">飲料</label><br>
+      <input type="radio" name="subCategory" id=radio113 value="三食費"><label for="radio113">三食費</label><br>
+      <input type="radio" name="subCategory" id=radio114 value="none"><label for="radio114">none</label><br>
+    </div>
+    <div id="趣味" style="display: none;">
+      <input type="radio" name="subCategory" id=radio121 value="服"><label for="radio121">服</label><br>
+      <input type="radio" name="subCategory" id=radio122 value="おみやげ"><label for="radio122">おみやげ</label><br>
+      <input type="radio" name="subCategory" id=radio123 value="遊び"><label for="radio123">遊び</label><br>
+      <input type="radio" name="subCategory" id=radio124 value="作品"><label for="radio124">作品</label><br>
+      <input type="radio" name="subCategory" id=radio125 value="雑費"><label for="radio125">雑費</label><br>
+
+    </div>
+    <div id="大学" style="display: none;">
+      <input type="radio" name="subCategory" id=radio151 value="学食"><label for="radio151">学食</label><br>
+      <input type="radio" name="subCategory" id=radio152 value="建築材料"><label for="radio152">建築材料</label><br>
+      <input type="radio" name="subCategory" id=radio153 value="教材費"><label for="radio153">教材費</label><br>
+    </div>
+    <div id="交通費" style="display: none;">
+      <input type="radio" name="subCategory" id=radio131 value="新幹線"><label for="radio131">新幹線</label><br>
+      <input type="radio" name="subCategory" id=radio132 value="在来線"><label for="radio132">在来線</label><br>
+      <input type="radio" name="subCategory" id=radio133 value="バス"><label for="radio133">バス</label><br>
+      <input type="radio" name="subCategory" id=radio134 value="タクシー"><label for="radio134">タクシー</label><br>
+    </div>
+    <div id="生活費" style="display: none;">
+      <input type="radio" name="subCategory" id=radio161 value="通信費"><label for="radio161">通信費</label><br>
+      <input type="radio" name="subCategory" id=radio162 value="薬剤費"><label for="radio162">薬剤費</label><br>
+      <input type="radio" name="subCategory" id=radio163 value="ヘアカット"><label for="radio163">ヘアカット</label><br>
+      <input type="radio" name="subCategory" id=radio164 value="その他"><label for="radio164">その他</label><br>
+    </div>
+  <div id="その他" style="display:none">
+      <input type="text" id="subCategory02" name="entry.1729500685"><br>
+    </div>
+  </div>
+  <label>タグ:<br></label><input type="text" id="text02" name="entry.519480361"><br>
+  <input type="hidden" name="entry.1928626912" id="entry0003" value="">
+  <input type="hidden" name="entry.1729500685" id="entry0004" value="">
+  <input type="submit" value="送信" id="submitBtn" onclick="myFunction0001()">
+  <iframe name="hidden_iframe" style="display:none" ></iframe>
+</form>
+
+
+
+<script>
+function showOtherOption(value) {
+  var otherOption = document.getElementById("otherOption");
+  var pulldown = document.getElementById("pulldown")
+  var pulldown02 = document.getElementById("pulldown02")
+
+  if (value === "その他") {
+    otherOption.style.display = "block";
+    pulldown.name = "";
+    pulldown02.name = "entry.799936107";
+
+  } else {
+    otherOption.style.display = "none";
+    pulldown.name = "entry.799936107";
+    pulldown02.name = "";
+
+  }
+}
+
+	//完成20230310
+	
+</script>
+
+<script>
+  function showSubCategory(mainCategory) {
+    var subCategory1 = document.getElementById("subCategory");
+    subCategory1.style.display = "block";
+    var subCategories1 = document.getElementsByName("subCategory");
+    for (var i = 0; i < subCategories1.length; i++) {
+      subCategories1[i].parentElement.style.display = "none";
+    }
+    document.getElementById(mainCategory).style.display = "block";
+
+    //subCategoryを変更したらリセットします
+    for (const element of document.getElementsByName("subCategory")) {
+    element.checked = false;
+    }
+    document.getElementById("subCategory02").value = "";
+  
+
+    var otherOption02 = document.getElementById("その他");
+    var radio02 = document.getElementsByName("subCategory")
+    var radio03 = document.getElementById("subCatefory02")
+    if (mainCategory === "その他") {
+      otherOption02.style.display = "block";
+      radio02.name = "";
+      radio03.name = "entry.1729500685";
+
+    } else {
+      otherOption02.style.display = "none";
+      radio02.name = "entry.1729500685";
+      radio03.name = "";
+
+    }
+  
+  
+  	// 「subCategory」というname属性を持つラジオボタンのみを選択し、
+		// それらのcheckedプロパティをfalseに設定します。
+		var subCategoryRadios = document.getElementsByName("subCategoryxxxxx");
+		for (var i = 0; i < subCategoryRadios.length; i++) {
+			subCategoryRadios[i].checked = false;
+		}
+
+   
+ 
+ 
+ }
+	
+
+
+</script>
+<script>
+  function submitForm() {
+    var mainCategory = document.querySelector('input[name="mainCategory"]:checked');
+    var subCategory2 = document.querySelector('input[name="subCategory"]:checked');
+    if(mainCategory){
+        document.getElementById("entry0003").value = mainCategory.value;
+    }
+    if(subCategory2) {
+        document.getElementById("entry0004").value = subCategory2.value;
+    }
+  }
+</script>
+<script>
+function myFunction0001() {
+  submitForm01();
+  changeBtnColor();
+
+ 
+
+}
+</script>
+
+
+
+<script>
+  function changeBtnColor() {
+    // ボタンの背景色を青色に変更
+  document.getElementById("submitBtn").style.backgroundColor = "#00ccff";
+  
+  // 3秒間で右から左に背景色を流す
+  var width = 100;
+  var animationInterval = setInterval(function() {
+    if (width <= 0) {
+      clearInterval(animationInterval);
+      // ボタンの背景色を緑色に戻す
+      document.getElementById("submitBtn").style.backgroundColor = "#4CAF50";
+    } else {
+      width--;
+      document.getElementById("submitBtn").style.backgroundImage = "linear-gradient(to left, #00ccff " + width + "%, #4CAF50 " + width + "%)";
+    }
+  }, 30);
+  }
+</script>
+
+<script>
+  function submitForm01() {
+   
+    // submitボタンを無効化する
+
+    setTimeout(function() {
+      document.getElementById("submitBtn").disabled = true;
+    }, 1);
+
+
+    // 0.1秒後から3秒後までsubmitボタンを無効化する
+    setTimeout(function() {
+      document.getElementById("submitBtn").disabled = false;
+    }, 3000);
+
+    //1秒後にフォームをリセットする
+    setTimeout(function(){
+      document.getElementById("text01").value = "";
+    }, 1000);
+
+  }
+</script>
+
+<style>
+
+
+
+form {
+  width: 100%;
+  margin: 20 ;
+  padding: 20 ;
+  text-align: left;
+}
+
+label {
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+input[id="text01"], select {
+  height: 50px;
+  width: 400px;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+  
+input[id="pulldown02"], select {
+  height: 50px;
+  width: 160px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+input[id="pulldown"], select {
+  height: 50px;
+  width: 180px;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+
+
+input[id="otherOption"], select {
+  height: 50px;
+  width: 162px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+input[id="その他"], select {
+  height: 50px;
+  width: 162px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+  
+input[type="radio"] {
+    transform: scale(1.6);
+    font-size: 50px;
+}
+
+input[type="radio"] + label {
+      font-size: 2.1em;
+}
+
+input[id="pulldown02"], select {
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+input[id="subCategory02"], select {
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+input[id="text02"], select {
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px 200px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-image: linear-gradient(to left, #4CAF50, #4CAF50);
+    background-size: 200% 100%;
+    transition: background-position 0.3s;
+  }
+#otherOption {
+  display: none;
+}
+
+#subCategory {
+  display: none;
+}
+
+#食費, #趣味 {
+  display: none;
+}
+
+</style>
